@@ -21,17 +21,17 @@ Paper by Robert C. Martin [Design Principles and Design Patterns](https://fi.ort
 
 ### Single Resposibility Principle
 Each class or module should have only a single resposibility or reason to change. This principle states that if we have 2 reasons to change for a class, we have to split the functionality in two classes. Each class will handle only one responsibility and if in the future we need to make one change we are going to make it in the class which handles it.
-*[Reading](https://code.tutsplus.com/tutorials/solid-part-1-the-single-responsibility-principle--net-36074)
-*Example:
-	*[Good](https://github.com/dboyliao/SOLID/blob/master/python_code/good/single_responsibility.py)
-	*[Bad](https://github.com/dboyliao/SOLID/blob/master/python_code/bad/single_responsibility.py)
+* [Reading](https://code.tutsplus.com/tutorials/solid-part-1-the-single-responsibility-principle--net-36074)
+* Example:
+	* [Good](https://github.com/dboyliao/SOLID/blob/master/python_code/good/single_responsibility.py)
+	* [Bad](https://github.com/dboyliao/SOLID/blob/master/python_code/bad/single_responsibility.py)
 	
 ### Open Closed Principle
 Software entities like classes, modules and functions should be open for extension but closed for modifications. Abstraction is the key to OCP. By using these techniques to conform to the
 OCP, we can create modules that are extensible, without being changed. This means
 that, with a little forethought, we can add new features to existing code, without
 changing the existing code and by only adding new code. 
-*[Reading](https://code.tutsplus.com/tutorials/solid-part-2-the-openclosed-principle--net-36600)
+* [Reading](https://code.tutsplus.com/tutorials/solid-part-2-the-openclosed-principle--net-36600)
 * Example:
-	*[Good](https://github.com/dboyliao/SOLID/blob/master/python_code/good/open_close.py)
-	*[Bad](https://github.com/dboyliao/SOLID/blob/master/python_code/bad/open_close.py)
+	* [Good](https://github.com/dboyliao/SOLID/blob/master/python_code/good/open_close.py)
+	* [Bad](https://github.com/dboyliao/SOLID/blob/master/python_code/bad/open_close.py)
