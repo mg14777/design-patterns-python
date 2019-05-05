@@ -35,3 +35,10 @@ changing the existing code and by only adding new code.
 * Example:
 	* [Good](https://github.com/dboyliao/SOLID/blob/master/python_code/good/open_close.py)
 	* [Bad](https://github.com/dboyliao/SOLID/blob/master/python_code/bad/open_close.py)
+
+### Liskov Substitution Principle
+Derived classes should be substitutable for their base classes. That is, a user of a base class should continue to function properly if a derivative of that base class is passed to it.
+* [Reading](http://retis.sssup.it/~lipari/courses/cpp09/lsp.pdf)
+* Example:
+	* [Good](https://github.com/dboyliao/SOLID/blob/master/python_code/good/LSP.py)
+	* [Bad](https://github.com/dboyliao/SOLID/blob/master/python_code/bad/LSP.py)
