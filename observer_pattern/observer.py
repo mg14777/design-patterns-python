@@ -1,5 +1,15 @@
 from abc import ABCMeta, abstractmethod
 
+"""
+Observer Pattern:
+	Define a one-to-many dependency between objects so that when one object
+	changes state, all its dependents are notified and updated automatically.
+
+Example borrowed from GeeksForGeeks
+https://www.geeksforgeeks.org/observer-pattern-set-1-introduction/
+https://www.geeksforgeeks.org/observer-pattern-set-2-implementation/
+"""
+
 class AbsSubject(object):
 	__metaclass__ = ABCMeta
 
@@ -69,16 +79,20 @@ if __name__ == '__main__':
 	current_score_display = CurrentScoreDisplay(cricket_data)
 
 	# register observer with subject
+	print('Registering current score display observer...')
 	cricket_data.register(current_score_display)
 
 	# update data
 	# observers should be notified and will reflect their updated state
+	print('Update cricket data...')
 	cricket_data.update_data(runs=50, wickets=1, overs=5)
 
 	# register another observer
 	average_score_display = AverageScoreDisplay(cricket_data)
+	print('Registering average score display observer...')
 	cricket_data.register(average_score_display)
 
 	# update data
 	# this time both current score and average score will be displayed
+	print('Update cricket data...')
 	cricket_data.update_data(runs=75, wickets=2, overs=8)
